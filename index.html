@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MVA Portfolio | Slicing</title>
+  <link rel="icon" href="public/image/image 1.png">
+  <script type="module" src="/src/main.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    .bg-custom-vignette {
+      background: radial-gradient(ellipse 150% 100% at center, #2a2a2a 0%, #050505 50%, #000000 100%);
+    }
+  </style>
+</head>
+
+<body class="bg-[#0A0A0A] text-white font-['Inter'] selection:bg-white selection:text-black">
+
+  <main class="relative w-full">
+
+    <section class="relative h-screen w-full flex items-center justify-center overflow-hidden px-16 bg-custom-vignette">
+
+      <div id="nav-wrapper"
+        class="fixed top-0 left-0 w-full flex justify-center z-100 transition-all duration-500 pointer-events-none"
+        style="transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);">
+
+        <nav id="main-nav"
+          class="pointer-events-auto flex justify-between items-center w-full max-w-full px-16 py-10 transition-all duration-500 overflow-hidden"
+          style="transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);">
+
+          <div class="text-2xl font-black tracking-tighter flex items-center justify-center">
+            <img src="public/image/image 1.png" alt="MVA Logo" id="nav-logo"
+              class="h-10 w-auto transition-all duration-500"
+              style="transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);">
+          </div>
+
+          <div id="nav-menu" class="flex items-center gap-10 text-[16px] font-bold transition-all duration-500">
+            <span id="nav-en"
+              class="cursor-pointer hover:opacity-60 transition-all duration-500 opacity-100 max-w-12.5 overflow-hidden block">EN</span>
+
+            <div class="flex items-center cursor-pointer group bg-transparent rounded-full transition-all duration-500">
+              <i class="fa-solid fa-bars text-2xl text-white group-hover:opacity-60 transition-all duration-300"></i>
+            </div>
+          </div>
+
+        </nav>
+      </div>
+
+      <div class="relative flex items-center justify-center w-full h-full">
+
+        <h1
+          class="absolute text-[15vw] font-black text-[#6B6B6B] tracking-tighter z-10 select-none pointer-events-none uppercase">
+          PORTFOLIO
+        </h1>
+
+        <div class="relative z-20 w-[90vh] h-auto pointer-events-none flex items-center justify-center mt-10">
+          <img src="public/image/image 4.png" alt="Chrome Sculpture"
+            class="w-250 h-auto max-w-none object-contain filter brightness-100 contrast-125 drop-shadow-[0_0_50px_rgba(255,255,255,0.15)] scale-110 opacity-80">
+        </div>
+
+        <h1
+          class="absolute text-[15vw] font-black text-[#6B6B6B] tracking-tighter z-30 select-none pointer-events-none uppercase mix-blend-screen">
+          <span class="opacity-0">POR</span><span class="opacity-100 drop-shadow-xl">TFOLIO</span>
+        </h1>
+      </div>
+
+      <div class="absolute top-[30%] left-[18%] z-30 pointer-events-none">
+        <p class="text-4xl font-light italic leading-none opacity-50 tracking-tighter font-serif">//Graphic</p>
+        <h2 class="text-7xl font-bold leading-[0.8] tracking-tighter">Designer</h2>
+      </div>
+
+      <div class="absolute bottom-[30%] right-[18%] z-30 text-right pointer-events-none">
+        <p class="text-4xl font-light italic leading-none opacity-50 tracking-tighter font-serif">//Frontend</p>
+        <h2 class="text-7xl font-bold leading-[0.8] tracking-tighter">Developer</h2>
+      </div>
+
+      <div class="absolute left-[8%] bottom-[12%] z-40 flex gap-6 items-start select-none">
+        <div
+          class="flex flex-col gap-1 text-[13px] font-black uppercase tracking-widest leading-none text-white/70 hover:text-white cursor-pointer transition-colors duration-300">
+          <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span>
+        </div>
+        <div
+          class="flex flex-col gap-1 text-[13px] font-black uppercase tracking-widest leading-none text-white/70 hover:text-white cursor-pointer transition-colors duration-300">
+          <span>P</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span>s</span>
+        </div>
+        <div
+          class="flex flex-col gap-1 text-[13px] font-black uppercase tracking-widest leading-none text-white/70 hover:text-white cursor-pointer transition-colors duration-300">
+          <span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span>
+        </div>
+        <div
+          class="flex flex-col gap-1 text-[13px] font-black uppercase tracking-widest leading-none text-white/70 hover:text-white cursor-pointer transition-colors duration-300">
+          <span>P</span><span>l</span><span>a</span><span>y</span>
+        </div>
+        <div
+          class="flex flex-col gap-1 text-[13px] font-black uppercase tracking-widest leading-none text-white/70 hover:text-white cursor-pointer transition-colors duration-300">
+          <span>C</span><span>e</span><span>r</span><span>t</span><span>i</span><span>f</span><span>i</span><span>c</span><span>a</span><span>t</span><span>e</span><span>s</span>
+        </div>
+      </div>
+
+      <div
+        class="absolute top-[28%] right-[15%] z-40 flex flex-col items-end text-[16px] opacity-60 font-bold tracking-wider">
+        <p class="border-b border-white/40 pb-0.5 mb-1.5">本於子4</p>
+        <p class="border-b border-white/40 pb-0.5 mb-1.5">用户体验设计餐</p>
+        <p class="border-b border-white/40 pb-0.5">伴品质</p>
+      </div>
+
+      <div
+        class="absolute bottom-12 left-1/2 -translate-x-1/2 z-50 bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20 flex items-center gap-2 hover:bg-white/20 transition-all cursor-default">
+        <div class="w-3 h-3 border border-white/50 rounded-full flex items-center justify-center">
+          <div class="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></div>
+        </div>
+        <span class="text-[10px] font-bold tracking-widest uppercase opacity-80">West Java, Indonesia</span>
+      </div>
+
+    </section>
+
+    <section id="about" class="relative w-full min-h-screen bg-black overflow-hidden z-40">
+
+      <div class="absolute top-24 left-12 md:left-32 flex flex-col items-start z-30">
+        <div class="w-2 h-2 bg-white rounded-full mb-1.5 ml-0.5"></div>
+
+        <span class="text-white font-bold tracking-wide text-[18px] mb-1.5">About</span>
+
+        <div class="flex flex-col gap-1">
+          <div class="w-10 h-[1.5px] bg-white/60"></div>
+          <div class="w-6 h-[1.5px] bg-white/60"></div>
+        </div>
+      </div>
+
+      <div
+        class="absolute right-[15%] md:right-[25%] top-[25%] text-[#8a8a8a] font-mono text-[18px] md:text-xs leading-relaxed z-0 select-none pointer-events-none opacity-40">
+        &lt;html&gt;<br>
+        &lt;head&gt;<br>
+        &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+        &nbsp;&nbsp;&lt;div class="container"&gt;<br>
+        &nbsp;&nbsp;&lt;link rel="stylesheet"&gt;<br>
+        &nbsp;&nbsp;&lt;link href="style.css"&gt;<br>
+        &nbsp;&nbsp;&lt;div&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;class="wrapper"&gt;<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+        &lt;/html&gt;
+      </div>
+
+      <div class="absolute left-12 md:left-32 top-1/2 -translate-y-1/2 flex flex-col text-left z-20">
+        <h2 class="text-5xl md:text-[64px] font-bold text-white mb-4 tracking-tight leading-none lowercase">designer
+        </h2>
+        <p class="text-[15px] md:text-sm leading-relaxed text-[#cccccc] max-w-70 lowercase">
+          product designer specialising in ui<br>design and design systems.
+        </p>
+      </div>
+
+      <div class="absolute bottom-100 left-1/2 -translate-x-1/2 w-[85%] md:w-250 max-w-550 z-10 pointer-events-none">
+        <img src="public/image/unnamed-removebg-preview 1.png" alt="MVA Face Split"
+          class="w-550 h-550 object-contain object-bottom drop-shadow-[0_-20px_50px_rgba(0,0,0,0.8)] pointer-events-none">
+      </div>
+
+      <div class="absolute right-12 md:right-32 top-1/2 -translate-y-1/2 flex flex-col text-left z-20">
+        <h2 class="text-5xl md:text-[64px] font-bold text-white mb-4 tracking-tight leading-none lowercase">&lt; coder
+          &gt;</h2>
+        <p class="text-[15px] md:text-sm leading-relaxed text-[#cccccc] max-w-70 lowercase">
+          front end developer who writes clean,<br>elegant and efficient code.
+        </p>
+      </div>
+
+    </section>
+
+    <section class="relative w-full h-40 flex items-center justify-center overflow-hidden z-50 -mt-55">
+
+      <div
+        class="absolute w-[110%] h-14 bg-linear-to-r from-[#999] via-[#e5e5e5] to-[#999] flex items-center justify-around rotate-2 z-20 text-[#111] text-2xl border-y border-white/20 shadow-2xl">
+        <i
+          class="fa-solid fa-gamepad hover:scale-150 hover:text-[#8b5cf6] cursor-pointer transition-all duration-300"></i>
+        <span class="text-[10px]">♦</span>
+        <i
+          class="fa-solid fa-gamepad hover:scale-150 hover:text-[#8b5cf6] cursor-pointer transition-all duration-300"></i>
+        <span class="text-[10px]">♦</span>
+        <i
+          class="fa-solid fa-chess-king hover:scale-150 hover:text-[#8b5cf6] cursor-pointer transition-all duration-300"></i>
+        <span class="text-[10px]">♦</span>
+        <i
+          class="fa-solid fa-chess-knight hover:scale-150 hover:text-[#8b5cf6] cursor-pointer transition-all duration-300"></i>
+        <span class="text-[10px]">♦</span>
+        <i
+          class="fa-solid fa-layer-group hover:scale-150 hover:text-[#8b5cf6] cursor-pointer transition-all duration-300"></i>
+        <span class="text-[10px]">♦</span>
+        <i
+          class="fa-solid fa-paint-brush hover:scale-150 hover:text-[#8b5cf6] cursor-pointer transition-all duration-300"></i>
+        <span class="text-[10px]">♦</span>
+        <i class="fa-solid fa-bug hover:scale-150 hover:text-[#8b5cf6] cursor-pointer transition-all duration-300"></i>
+        <span class="text-[10px]">♦</span>
+        <span
+          class="font-bold font-mono text-xl hover:scale-150 hover:text-[#8b5cf6] cursor-pointer transition-all duration-300">{
+          }</span> <span class="text-[10px]">♦</span>
+        <i
+          class="fa-solid fa-gamepad hover:scale-150 hover:text-[#8b5cf6] cursor-pointer transition-all duration-300"></i>
+        <span class="text-[10px]">♦</span>
+        <i
+          class="fa-solid fa-chess-king hover:scale-150 hover:text-[#8b5cf6] cursor-pointer transition-all duration-300"></i>
+        <span class="text-[10px]">♦</span>
+        <i
+          class="fa-solid fa-chess-knight hover:scale-150 hover:text-[#8b5cf6] cursor-pointer transition-all duration-300"></i>
+      </div>
+
+      <div
+        class="absolute w-[110%] h-14 bg-linear-to-r from-[#222] via-[#666] to-[#222] flex items-center justify-around -rotate-2 scale-y-[-1] z-10 text-white/50 text-2xl border-y border-black/50 opacity-80 translate-y-2 pointer-events-none">
+        <i class="fa-solid fa-gamepad"></i> <span class="text-[10px]">♦</span>
+        <i class="fa-solid fa-gamepad"></i> <span class="text-[10px]">♦</span>
+        <i class="fa-solid fa-chess-king"></i> <span class="text-[10px]">♦</span>
+        <i class="fa-solid fa-chess-knight"></i> <span class="text-[10px]">♦</span>
+        <i class="fa-solid fa-layer-group"></i> <span class="text-[10px]">♦</span>
+        <i class="fa-solid fa-paint-brush"></i> <span class="text-[10px]">♦</span>
+        <i class="fa-solid fa-bug"></i> <span class="text-[10px]">♦</span>
+        <span class="font-bold font-mono text-xl">{ }</span> <span class="text-[10px]">♦</span>
+        <i class="fa-solid fa-gamepad"></i> <span class="text-[10px]">♦</span>
+        <i class="fa-solid fa-chess-king"></i> <span class="text-[10px]">♦</span>
+        <i class="fa-solid fa-chess-knight"></i>
+      </div>
+
+    </section>
+
+    <section id="skills"
+      class="relative w-full min-h-screen bg-black flex items-center justify-center py-24 z-40 overflow-hidden">
+
+      <div
+        class="absolute top-1/2 left-1/2 w-150 h-150 bg-[#8b5cf6]/10 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2 pointer-events-none z-0">
+      </div>
+
+      <div class="absolute top-24 left-12 md:left-32 flex flex-col items-start z-30">
+        <div class="w-2 h-2 bg-white rounded-full mb-1.5 ml-0.5"></div>
+        <span class="text-white font-bold tracking-wide text-[18px] mb-1.5 uppercase">skills</span>
+        <div class="flex flex-col gap-1">
+          <div class="w-10 h-[1.5px] bg-white/60"></div>
+          <div class="w-6 h-[1.5px] bg-white/60"></div>
+        </div>
+      </div>
+
+      <div class="relative w-[85%] max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24 z-20 mt-32 md:mt-10">
+
+        <div class="flex flex-col gap-16 justify-center">
+
+          <div data-aos="fade-right">
+            <h3 class="text-white/30 text-[14px] font-mono tracking-[4px] uppercase mb-10">&lt; Creative & Tech Tools
+              /&gt;</h3>
+            <div class="grid grid-cols-4 md:grid-cols-5 gap-y-10 gap-x-6">
+              <div class="flex flex-col items-center gap-3 group cursor-pointer">
+                <i
+                  class="fa-brands fa-figma text-4xl text-[#333] group-hover:text-[#f24e1e] group-hover:scale-110 transition-all duration-300"></i>
+                <span
+                  class="text-[9px] text-gray-500 font-medium opacity-0 group-hover:opacity-100 uppercase tracking-tighter">Figma</span>
+              </div>
+              <div class="flex flex-col items-center gap-3 group cursor-pointer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+                  class="w-9 h-9 grayscale group-hover:grayscale-0 transition-all duration-300" alt="Ps">
+                <span
+                  class="text-[9px] text-gray-500 font-medium opacity-0 group-hover:opacity-100 uppercase tracking-tighter">Photoshop</span>
+              </div>
+              <div class="flex flex-col items-center gap-3 group cursor-pointer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
+                  class="w-9 h-9 grayscale group-hover:grayscale-0 transition-all duration-300" alt="Ai">
+                <span
+                  class="text-[9px] text-gray-500 font-medium opacity-0 group-hover:opacity-100 uppercase tracking-tighter">Illustrator</span>
+              </div>
+              <div class="flex flex-col items-center gap-3 group cursor-pointer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg"
+                  class="w-9 h-9 grayscale group-hover:grayscale-0 transition-all duration-300" alt="Pr">
+                <span
+                  class="text-[9px] text-gray-500 font-medium opacity-0 group-hover:opacity-100 uppercase tracking-tighter">Premiere</span>
+              </div>
+
+              <div class="flex flex-col items-center gap-3 group cursor-pointer">
+                <i
+                  class="fa-brands fa-html5 text-4xl text-[#333] group-hover:text-[#e34f26] group-hover:scale-110 transition-all duration-300"></i>
+                <span
+                  class="text-[9px] text-gray-500 font-medium opacity-0 group-hover:opacity-100 uppercase tracking-tighter">HTML5</span>
+              </div>
+              <div class="flex flex-col items-center gap-3 group cursor-pointer">
+                <i
+                  class="fa-brands fa-css3-alt text-4xl text-[#333] group-hover:text-[#1572b6] group-hover:scale-110 transition-all duration-300"></i>
+                <span
+                  class="text-[9px] text-gray-500 font-medium opacity-0 group-hover:opacity-100 uppercase tracking-tighter">CSS3</span>
+              </div>
+              <div class="flex flex-col items-center gap-3 group cursor-pointer">
+                <i
+                  class="fa-brands fa-js text-4xl text-[#333] group-hover:text-[#f7df1e] group-hover:scale-110 transition-all duration-300"></i>
+                <span
+                  class="text-[9px] text-gray-500 font-medium opacity-0 group-hover:opacity-100 uppercase tracking-tighter">JS</span>
+              </div>
+              <div class="flex flex-col items-center gap-3 group cursor-pointer">
+                <i
+                  class="fa-brands fa-python text-4xl text-[#333] group-hover:text-[#3776ab] group-hover:scale-110 transition-all duration-300"></i>
+                <span
+                  class="text-[9px] text-gray-500 font-medium opacity-0 group-hover:opacity-100 uppercase tracking-tighter">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-right" data-aos-delay="200">
+            <h3 class="text-white/30 text-[14px] font-mono tracking-[4px] uppercase mb-6">// Extra Focus</h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-4 py-1.5 border border-white/10 rounded-full text-[10px] text-gray-400 hover:border-[#8b5cf6] hover:text-white transition-all cursor-default">Visual
+                Branding</span>
+              <span
+                class="px-4 py-1.5 border border-white/10 rounded-full text-[10px] text-gray-400 hover:border-[#8b5cf6] hover:text-white transition-all cursor-default">Video
+                Editing</span>
+              <span
+                class="px-4 py-1.5 border border-white/10 rounded-full text-[10px] text-gray-400 hover:border-[#8b5cf6] hover:text-white transition-all cursor-default">UI
+                Animation</span>
+              <span
+                class="px-4 py-1.5 border border-white/10 rounded-full text-[10px] text-gray-400 hover:border-[#8b5cf6] hover:text-white transition-all cursor-default">Public
+                Speaking</span>
+              <span
+                class="px-4 py-1.5 border border-white/10 rounded-full text-[10px] text-gray-400 hover:border-[#8b5cf6] hover:text-white transition-all cursor-default">Model
+                United Nations</span>
+              <span
+                class="px-4 py-1.5 border border-white/10 rounded-full text-[10px] text-gray-400 hover:border-[#8b5cf6] hover:text-white transition-all cursor-default">Market
+                Analysis</span>
+              <span
+                class="px-4 py-1.5 border border-white/10 rounded-full text-[10px] text-gray-400 hover:border-[#8b5cf6] hover:text-white transition-all cursor-default">Trading
+                Strategy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center border-l border-white/10 pl-0 lg:pl-16 pt-10 lg:pt-0 gap-16">
+
+          <div>
+            <h3 class="text-white/30 text-[14px] font-mono tracking-[4px] uppercase mb-10">&lt; Mastery /&gt;</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-4">
+              <div class="flex flex-col items-center gap-4" data-aos="zoom-in">
+                <div class="relative w-24 h-24 flex items-center justify-center">
+                  <svg class="absolute inset-0 w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" stroke="#111" stroke-width="5" fill="transparent" />
+                    <circle cx="50" cy="50" r="40" stroke="#8b5cf6" stroke-width="5" fill="transparent"
+                      stroke-dasharray="251.2" stroke-dashoffset="37" stroke-linecap="round"
+                      class="drop-shadow-[0_0_8px_rgba(139,92,246,0.5)]" />
+                  </svg>
+                  <span class="text-white font-bold text-xl">85%</span>
+                </div>
+                <span class="text-gray-500 text-[9px] uppercase tracking-widest text-center">Graphic Design</span>
+              </div>
+              <div class="flex flex-col items-center gap-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="relative w-24 h-24 flex items-center justify-center">
+                  <svg class="absolute inset-0 w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" stroke="#111" stroke-width="5" fill="transparent" />
+                    <circle cx="50" cy="50" r="40" stroke="#8b5cf6" stroke-width="5" fill="transparent"
+                      stroke-dasharray="251.2" stroke-dashoffset="25" stroke-linecap="round"
+                      class="drop-shadow-[0_0_8px_rgba(139,92,246,0.5)]" />
+                  </svg>
+                  <span class="text-white font-bold text-xl">90%</span>
+                </div>
+                <span class="text-gray-500 text-[9px] uppercase tracking-widest text-center">UI/UX Design</span>
+              </div>
+              <div class="flex flex-col items-center gap-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="relative w-24 h-24 flex items-center justify-center">
+                  <svg class="absolute inset-0 w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" stroke="#111" stroke-width="5" fill="transparent" />
+                    <circle cx="50" cy="50" r="40" stroke="#8b5cf6" stroke-width="5" fill="transparent"
+                      stroke-dasharray="251.2" stroke-dashoffset="30" stroke-linecap="round"
+                      class="drop-shadow-[0_0_8px_rgba(139,92,246,0.5)]" />
+                  </svg>
+                  <span class="text-white font-bold text-xl">88%</span>
+                </div>
+                <span class="text-gray-500 text-[9px] uppercase tracking-widest text-center">Web Development</span>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-delay="300">
+            <h3 class="text-white/30 text-[14px] font-mono tracking-[4px] uppercase mb-6">// Communication</h3>
+            <div class="flex flex-col gap-6 max-w-sm">
+              <div class="group">
+                <div class="flex justify-between mb-1.5">
+                  <span class="text-xs text-gray-300 font-medium tracking-wide">Indonesian</span>
+                  <span class="text-[10px] text-gray-500 italic">Native</span>
+                </div>
+                <div class="w-full h-0.75 bg-[#111] rounded-full overflow-hidden">
+                  <div class="h-full bg-[#8b5cf6] w-full shadow-[0_0_8px_rgba(139,92,246,0.4)]"></div>
+                </div>
+              </div>
+              <div class="group">
+                <div class="flex justify-between mb-1.5">
+                  <span class="text-xs text-gray-300 font-medium tracking-wide">English</span>
+                  <span class="text-[10px] text-gray-500 italic">Intermediate</span>
+                </div>
+                <div class="w-full h-0.75 bg-[#111] rounded-full overflow-hidden">
+                  <div
+                    class="h-full bg-white/20 group-hover:bg-[#8b5cf6] w-[75%] transition-all duration-700 shadow-[0_0_8px_rgba(139,92,246,0.4)]">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+<style>
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+        .snap-container { scroll-snap-type: x mandatory; }
+        .snap-item { scroll-snap-align: center; }
+        .no-select { user-select: none; -webkit-user-select: none; }
+        .cursor-grabbing { cursor: grabbing !important; }
+    </style>
+
+    <section id="projects" class="relative w-full min-h-screen bg-[#050505] flex flex-col items-center py-24 z-40 overflow-hidden font-sans">
+        
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-125 bg-[#8b5cf6]/15 rounded-full blur-[150px] pointer-events-none z-0"></div>
+
+        <div class="absolute top-24 left-12 md:left-32 flex flex-col items-start z-30">
+            <div class="w-2 h-2 bg-white rounded-full mb-1 ml-1"></div>
+            <span class="text-white font-bold tracking-wide text-3xl mb-2">Projects</span>
+            <div class="flex flex-col gap-1">
+                <div class="w-12 h-0.5 bg-white/60"></div>
+                <div class="w-7 h-0.5 bg-white/60"></div>
+            </div>
+        </div>
+
+        <div class="relative w-full flex flex-col items-center justify-center z-20 mt-40 md:mt-32">
+            
+            <button id="prev-btn" class="absolute left-2 md:left-10 z-50 bg-[#111] border border-white/10 text-white/50 hover:text-[#8b5cf6] p-4 rounded-full hover:bg-[#222] transition-colors">
+                <i class="fa-solid fa-chevron-left pointer-events-none"></i>
+            </button>
+            
+            <button id="next-btn" class="absolute right-2 md:right-10 z-50 bg-[#111] border border-white/10 text-white/50 hover:text-[#8b5cf6] p-4 rounded-full hover:bg-[#222] transition-colors">
+                <i class="fa-solid fa-chevron-right pointer-events-none"></i>
+            </button>
+
+            <div id="carousel-track" class="snap-container cursor-grab flex items-center gap-8 overflow-x-auto hide-scroll w-full px-[calc(50vw-180px)] md:px-[calc(50vw-240px)] py-20" style="perspective: 1200px;">
+                
+                <div class="project-card snap-item no-select shrink-0 w-85 h-260 md:w-120 md:h-87.5 bg-[#111] rounded-4xl border border-white/5 shadow-2xl relative overflow-hidden flex flex-col justify-center items-center" style="transition: transform 0.1s ease-out;">
+                    <div class="card-image w-full flex items-center justify-center transition-all duration-500 ease-out z-10 absolute">
+                        <h2 class="text-white font-bold text-3xl flex items-center gap-3"><img src="public/image/image2.png" alt=""></h2>
+                    </div>
+                    <div class="card-text absolute bottom-6 md:bottom-10 w-full px-10 md:px-14 transition-all duration-500 ease-out flex flex-col items-start text-left pointer-events-none" style="opacity: 0; transform: translateX(-30px);">
+                        <h3 class="text-[#8b5cf6] text-[10px] md:text-xs font-mono tracking-widest uppercase mb-2">// visual identity</h3>
+                        <h4 class="text-white text-xl md:text-2xl font-black mb-2 leading-tight uppercase">GANTTHERS BARBERSHOP</h4>
+                        <p class="text-gray-400 text-xs md:text-sm leading-tight">Desain sistem branding dan identitas visual.</p>
+                    </div>
+                </div>
+
+                <div class="project-card snap-item no-select shrink-0 w-85 h-65 md:w-120 md:h-87.5 bg-[#111] rounded-4xl border border-white/5 shadow-2xl relative overflow-hidden flex flex-col justify-center items-center" style="transition: transform 0.1s ease-out;">
+                    <div class="card-image w-full flex items-center justify-center transition-all duration-500 ease-out z-10 absolute">
+                        <h2 class="text-white font-bold text-3xl flex items-center gap-3"><img src="https://i.pinimg.com/1200x/f3/2f/ff/f32fff0ca9636139fec9bc0bf8f6a8c7.jpg" alt=""></h2>
+                    </div>
+                    <div class="card-text absolute bottom-6 md:bottom-10 w-full px-10 md:px-14 transition-all duration-500 ease-out flex flex-col items-start text-left pointer-events-none" style="opacity: 0; transform: translateX(-30px);">
+                        <h3 class="text-[#8b5cf6] text-[10px] md:text-xs font-mono tracking-widest uppercase mb-2">// ui/ux design</h3>
+                        <h4 class="text-white text-xl md:text-2xl font-black mb-2 leading-tight uppercase">MODERN TRADING DASHBOARD</h4>
+                        <p class="text-gray-400 text-xs md:text-sm leading-tight">Pratinjau antarmuka pengguna dasbor trading.</p>
+                    </div>
+                </div>
+
+                <div class="project-card snap-item no-select shrink-0 w-85 h-65 md:w-120 md:h-87.5 bg-[#111] rounded-4xl border border-white/5 shadow-2xl relative overflow-hidden flex flex-col justify-center items-center" style="transition: transform 0.1s ease-out;">
+                    <div class="card-image w-full flex items-center justify-center transition-all duration-500 ease-out z-10 absolute">
+                        <h2 class="text-white font-bold text-3xl flex items-center gap-3"><img src="https://i.pinimg.com/736x/08/fc/73/08fc73259bffbe1b77eee69cb5b98c6f.jpg" alt=""></h2>
+                    </div>
+                    <div class="card-text absolute bottom-6 md:bottom-10 w-full px-10 md:px-14 transition-all duration-500 ease-out flex flex-col items-start text-left pointer-events-none" style="opacity: 0; transform: translateX(-30px);">
+                        <h3 class="text-[#8b5cf6] text-[10px] md:text-xs font-mono tracking-widest uppercase mb-2">// app design</h3>
+                        <h4 class="text-white text-xl md:text-2xl font-black mb-2 leading-tight uppercase">FLOWSTATE APP DESIGN</h4>
+                        <p class="text-gray-400 text-xs md:text-sm leading-tight">Product design for a unique flow.</p>
+                    </div>
+                </div>
+
+                <div class="project-card snap-item no-select shrink-0 w-85 h-65 md:w-120 md:h-87.5 bg-[#111] rounded-4xl border border-white/5 shadow-2xl relative overflow-hidden flex flex-col justify-center items-center" style="transition: transform 0.1s ease-out;">
+                    <div class="card-image w-full flex items-center justify-center transition-all duration-500 ease-out z-10 absolute">
+                        <h2 class="text-white font-bold text-3xl flex items-center gap-3"><i class="fa-solid fa-code text-[#8b5cf6]"></i> Dev V1</h2>
+                    </div>
+                    <div class="card-text absolute bottom-6 md:bottom-10 w-full px-10 md:px-14 transition-all duration-500 ease-out flex flex-col items-start text-left pointer-events-none" style="opacity: 0; transform: translateX(-30px);">
+                        <h3 class="text-[#8b5cf6] text-[10px] md:text-xs font-mono tracking-widest uppercase mb-2">// creative coding</h3>
+                        <h4 class="text-white text-xl md:text-2xl font-black mb-2 leading-tight uppercase">PORTFOLIO V1 DEV</h4>
+                        <p class="text-gray-400 text-xs md:text-sm leading-tight">My first portfolio coded from scratch.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div id="dots-container" class="flex gap-3 mt-4 z-20">
+                <div class="dot w-2 h-2 rounded-full transition-all duration-300 cursor-pointer"></div>
+                <div class="dot w-2 h-2 rounded-full transition-all duration-300 cursor-pointer"></div>
+                <div class="dot w-2 h-2 rounded-full transition-all duration-300 cursor-pointer"></div>
+                <div class="dot w-2 h-2 rounded-full transition-all duration-300 cursor-pointer"></div>
+            </div>
+
+        </div>
+    </section>
+
+  </main>
+ <script>
+        const track = document.getElementById('carousel-track');
+        const cards = document.querySelectorAll('.project-card');
+        const dots = document.querySelectorAll('.dot');
+
+        function updateCoverflow() {
+            const trackCenter = track.scrollLeft + (track.clientWidth / 2);
+            let activeIndex = 0;
+            let minDistance = Infinity;
+
+            cards.forEach((card, i) => {
+                const cardCenter = card.offsetLeft + (card.offsetWidth / 2);
+                const distance = trackCenter - cardCenter; 
+                const absDistance = Math.abs(distance);
+
+                if (absDistance < minDistance) {
+                    minDistance = absDistance;
+                    activeIndex = i;
+                }
+
+                let rotate = (distance / track.clientWidth) * 70; 
+                rotate = Math.max(-50, Math.min(50, rotate)); 
+
+                let scale = 1 - (absDistance / track.clientWidth) * 0.2;
+                scale = Math.max(0.8, scale); 
+
+                card.style.transform = `rotateY(${rotate}deg) scale(${scale})`;
+
+                const imgWrap = card.querySelector('.card-image');
+                const textWrap = card.querySelector('.card-text');
+                
+                // PAS DI TENGAH (AKTIF)
+                if (absDistance < card.offsetWidth / 1.5) {
+                    card.style.zIndex = '20';
+                    card.style.borderColor = 'rgba(139, 92, 246, 0.6)'; 
+                    card.style.boxShadow = '0 0 50px rgba(139, 92, 246, 0.2)';
+                    
+                    imgWrap.style.transform = 'translateY(-65px) scale(0.9)'; 
+                    
+                    // Teks muncul dan geser pas di tempatnya (0px)
+                    textWrap.style.opacity = '1'; 
+                    textWrap.style.transform = 'translateX(0px)'; 
+                    textWrap.style.pointerEvents = 'auto';
+                } 
+                // PAS DI SAMPING (NGUMPET)
+                else {
+                    card.style.zIndex = '10';
+                    card.style.borderColor = 'rgba(255, 255, 255, 0.05)';
+                    card.style.boxShadow = distance > 0 ? '-20px 25px 40px rgba(0,0,0,0.7)' : '20px 25px 40px rgba(0,0,0,0.7)';
+                    
+                    imgWrap.style.transform = 'translateY(0) scale(1)'; 
+                    
+                    // Teks ngumpet sambil geser ke kiri sedikit (-30px)
+                    textWrap.style.opacity = '0'; 
+                    textWrap.style.transform = 'translateX(-30px)'; 
+                    textWrap.style.pointerEvents = 'none';
+                }
+            });
+
+            dots.forEach((dot, i) => {
+                if (i === activeIndex) {
+                    dot.classList.add('w-8', 'bg-[#8b5cf6]', 'shadow-[0_0_8px_rgba(139,92,246,0.6)]');
+                    dot.classList.remove('w-2', 'bg-white/20');
+                } else {
+                    dot.classList.remove('w-8', 'bg-[#8b5cf6]', 'shadow-[0_0_8px_rgba(139,92,246,0.6)]');
+                    dot.classList.add('w-2', 'bg-white/20');
+                }
+            });
+        }
+
+        track.addEventListener('scroll', updateCoverflow);
+        window.addEventListener('resize', updateCoverflow);
+        setTimeout(updateCoverflow, 100);
+
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        track.addEventListener('mousedown', (e) => {
+            isDown = true;
+            track.classList.add('cursor-grabbing');
+            track.style.scrollSnapType = 'none'; 
+            startX = e.pageX - track.offsetLeft;
+            scrollLeft = track.scrollLeft;
+        });
+
+        track.addEventListener('mouseleave', () => {
+            isDown = false;
+            track.classList.remove('cursor-grabbing');
+            track.style.scrollSnapType = 'x mandatory'; 
+        });
+
+        track.addEventListener('mouseup', () => {
+            isDown = false;
+            track.classList.remove('cursor-grabbing');
+            track.style.scrollSnapType = 'x mandatory'; 
+        });
+
+        track.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - track.offsetLeft;
+            const walk = (x - startX) * 2; 
+            track.scrollLeft = scrollLeft - walk;
+        });
+
+        function getActiveIndex() {
+            const trackCenter = track.scrollLeft + (track.clientWidth / 2);
+            let activeIndex = 0;
+            let minDistance = Infinity;
+            cards.forEach((card, i) => {
+                let dist = Math.abs(trackCenter - (card.offsetLeft + card.offsetWidth/2));
+                if(dist < minDistance) { minDistance = dist; activeIndex = i; }
+            });
+            return activeIndex;
+        }
+
+        document.getElementById('next-btn').addEventListener('click', () => {
+            const current = getActiveIndex();
+            if(current < cards.length - 1) {
+                cards[current + 1].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            }
+        });
+
+        document.getElementById('prev-btn').addEventListener('click', () => {
+            const current = getActiveIndex();
+            if(current > 0) {
+                cards[current - 1].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            }
+        });
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', () => {
+                cards[i].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            });
+        });
+    </script>
+    
+  <script>
+    window.addEventListener('scroll', () => {
+      const wrapper = document.getElementById('nav-wrapper');
+      const nav = document.getElementById('main-nav');
+      const logo = document.getElementById('nav-logo');
+      const en = document.getElementById('nav-en');
+      const menu = document.getElementById('nav-menu');
+
+      if (window.scrollY > 50) {
+        // 1. Wrapper turun dikit
+        wrapper.classList.remove('top-0');
+        wrapper.classList.add('top-6');
+
+        // 2. Nav ditarik mulus jadi 200px doang
+        nav.classList.remove('max-w-full', 'px-16', 'py-10');
+        nav.classList.add('max-w-[200px]', 'px-6', 'py-3', 'bg-white/10', 'backdrop-blur-md', 'border', 'border-white/20', 'rounded-full', 'shadow-2xl');
+
+        // 3. Logo mengecil
+        logo.classList.remove('h-10');
+        logo.classList.add('h-6');
+
+        // 4. Teks EN pudar dan nyusut perlahan (TIDAK KAKU)
+        en.classList.remove('opacity-100', 'max-w-[50px]');
+        en.classList.add('opacity-0', 'max-w-0');
+
+        // 5. Jarak menu merapat
+        menu.classList.remove('gap-10');
+        menu.classList.add('gap-0');
+
+      } else {
+        // KEMBALI KE AWAL DENGAN MULUS
+        wrapper.classList.add('top-0');
+        wrapper.classList.remove('top-6');
+
+        nav.classList.add('max-w-full', 'px-16', 'py-10');
+        nav.classList.remove('max-w-[200px]', 'px-6', 'py-3', 'bg-white/10', 'backdrop-blur-md', 'border', 'border-white/20', 'rounded-full', 'shadow-2xl');
+
+        logo.classList.add('h-10');
+        logo.classList.remove('h-6');
+
+        en.classList.remove('opacity-0', 'max-w-0');
+        en.classList.add('opacity-100', 'max-w-[50px]');
+
+        menu.classList.add('gap-10');
+        menu.classList.remove('gap-0');
+      }
+    });
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // Kecepatan animasi (1 detik)
+      once: true,     // Cuma sekali muncul pas di-scroll
+    });
+  </script>
+
+</body>
+
+</html>
