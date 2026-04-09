@@ -19,6 +19,24 @@
 
 <body class="bg-[#0A0A0A] text-white font-['Inter'] selection:bg-white selection:text-black">
 
+  <div id="preloader" class="fixed inset-0 z-99999 bg-[#050505] flex flex-col items-center justify-center transition-transform duration-1200 ease-[cubic-bezier(0.76,0,0.24,1)]">
+        
+        <div class="overflow-hidden pb-2">
+            <h1 id="loader-text" class="text-white text-6xl md:text-8xl font-black tracking-widest uppercase translate-y-full transition-transform duration-700 ease-out">
+                MVΛ
+            </h1>
+        </div>
+
+        <div class="w-48 md:w-64 h-0.5 bg-white/10 mt-8 overflow-hidden rounded-full">
+            <div id="loader-progress" class="h-full bg-white w-0 transition-all duration-2000 ease-out"></div>
+        </div>
+
+        <div id="loader-percentage" class="text-white/50 font-mono text-sm mt-4 opacity-0 transition-opacity duration-500">
+            0%
+        </div>
+
+    </div>
+
   <main class="relative w-full">
 
     <section class="relative h-screen w-full flex items-center justify-center overflow-hidden px-16 bg-custom-vignette">
@@ -521,8 +539,9 @@
             style="transition: transform 0.1s ease-out;">
             <div
               class="card-image w-full flex items-center justify-center transition-all duration-500 ease-out z-10 absolute">
-              <h2 class="text-white font-bold text-3xl flex items-center gap-3"><i
-                  class="fa-solid fa-code text-[#8b5cf6]"></i> Dev V1</h2>
+              <h2 class="text-white font-bold text-3xl flex items-center gap-3">
+                <img src="public/image/project/MWA-Portfolio.png" alt="">
+              </h2>
             </div>
             <div
               class="card-text absolute bottom-6 md:bottom-10 w-full px-10 md:px-14 transition-all duration-500 ease-out flex flex-col items-start text-left pointer-events-none"
@@ -797,11 +816,11 @@
         <div class="font-black tracking-widest text-[15px] uppercase text-white/50">CONTACT</div>
 
         <div class="flex flex-col gap-3">
-          <a href="#"
+          <a href="https://www.instagram.com/wsy.nda_/"
             class="w-12 h-12 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center hover:scale-105 hover:bg-white/20 hover:border-white/40 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] transition-all duration-300 backdrop-blur-md">
             <i class="fa-brands fa-instagram text-xl"></i>
           </a>
-          <a href="#"
+          <a href="https://www.linkedin.com/in/wisyananda-affandi-6505213a5/"
             class="w-12 h-12 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center hover:scale-105 hover:bg-white/20 hover:border-white/40 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] transition-all duration-300 backdrop-blur-md">
             <i class="fa-brands fa-linkedin-in text-xl"></i>
           </a>
@@ -1086,6 +1105,61 @@
       once: true,     // Cuma sekali muncul pas di-scroll
     });
   </script>
+
+  <script>
+        // =========================================
+        // PRELOADER / WELCOME ANIMATION SCRIPT
+        // =========================================
+        window.addEventListener('DOMContentLoaded', () => {
+            const preloader = document.getElementById('preloader');
+            const loaderText = document.getElementById('loader-text');
+            const loaderProgress = document.getElementById('loader-progress');
+            const loaderPercentage = document.getElementById('loader-percentage');
+            
+            // 1. Munculin Teks MVA dan Persentase
+            setTimeout(() => {
+                loaderText.classList.remove('translate-y-full');
+                loaderPercentage.classList.remove('opacity-0');
+            }, 300);
+
+            // 2. Jalanin Angka 0% ke 100%
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += Math.floor(Math.random() * 10) + 2; // Nambah random biar natural
+                if (progress >= 100) progress = 100;
+                
+                loaderPercentage.innerText = progress + '%';
+                
+                if (progress === 100) {
+                    clearInterval(interval);
+                }
+            }, 100);
+
+            // 3. Jalanin Garis Loading
+            setTimeout(() => {
+                loaderProgress.style.width = '100%';
+            }, 500);
+
+            // 4. Tutup Layar Preloader (Ngangkat ke atas) pas udah beres
+            setTimeout(() => {
+                // Teksnya turunin lagi dikit buat efek keluar
+                loaderText.classList.add('translate-y-[120%]');
+                loaderProgress.style.opacity = '0';
+                loaderPercentage.style.opacity = '0';
+                
+                // Layar hitamnya keangkat ke atas
+                setTimeout(() => {
+                    preloader.classList.add('-translate-y-full');
+                    
+                    // Buang element preloader dari HTML biar web gak berat
+                    setTimeout(() => {
+                        preloader.remove();
+                    }, 1200);
+                }, 400);
+
+            }, 2500); // Ganti angka ini kalo mau loadingnya lebih lama/cepet
+        });
+    </script>
 
 </body>
 
